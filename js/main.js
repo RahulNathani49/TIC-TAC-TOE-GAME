@@ -21,13 +21,16 @@ var alclk7 = 1;
 var alclk8 = 1;
 var alclk9 = 1;
 
+var tieclk = 0;
 
 function boxone(){
+    
         if(alclk1>1){
             alert("INVALID!");
         }
     else{
-        
+        tieclk++;
+        console.log(tieclk);
    
 
         if(clk%2 == 0){
@@ -48,14 +51,37 @@ function boxone(){
        box1.innerHTML="O";  
     }
     }
+    
+    if(box1.innerHTML=="X" && box2.innerHTML=="X" && box3.innerHTML=="X"){
+        d2.innerHTML="PLAYER 1 WON";
+    }
+    if(box1.innerHTML=="X" && box5.innerHTML=="X" && box9.innerHTML=="X"){
+        d2.innerHTML="PLAYER 1 WON";    
+    }
+    if(box1.innerHTML=="X" && box4.innerHTML=="X" && box7.innerHTML=="X"){
+        d2.innerHTML="PLAYER 1 WON";
+    }
+        if(box1.innerHTML=="O" && box2.innerHTML=="O" && box3.innerHTML=="O"){
+        d2.innerHTML="PLAYER 2 WON";
+    }
+    if(box1.innerHTML=="O" && box5.innerHTML=="O" && box9.innerHTML=="O"){
+        d2.innerHTML="PLAYER 2 WON";    
+    }
+    if(box1.innerHTML=="O" && box4.innerHTML=="O" && box7.innerHTML=="O"){
+        d2.innerHTML="PLAYER 2 WON";
+    }
+  
+  tie();
 }
 
 function boxtwo(){
+    
                 if(alclk2>1){
             alert("INVALID!");
         }
     else{
-        
+        tieclk++;
+        console.log(tieclk);
 
    
         if(clk%2 == 0){
@@ -77,6 +103,20 @@ function boxtwo(){
     }
         
     }
+     if(box1.innerHTML=="X" && box2.innerHTML=="X" && box3.innerHTML=="X"){
+        d2.innerHTML="PLAYER 1 WON";
+    }
+      if(box2.innerHTML=="X" && box5.innerHTML=="X" && box8.innerHTML=="X"){
+        d2.innerHTML="PLAYER 1 WON";
+    }
+         if(box1.innerHTML=="O" && box2.innerHTML=="O" && box3.innerHTML=="O"){
+        d2.innerHTML="PLAYER 2 WON";
+    }
+      if(box2.innerHTML=="O" && box5.innerHTML=="O" && box8.innerHTML=="O"){
+        d2.innerHTML="PLAYER 2 WON";
+    }
+    tie();
+    
   
 }
 
@@ -85,6 +125,8 @@ function boxthree(){
             alert("INVALID!");
         }
     else{
+        tieclk++;
+        console.log(tieclk);
          if(clk%2 == 0){
             d1.innerHTML="PLAYER = 1";
             clk++;
@@ -105,7 +147,26 @@ function boxthree(){
         
     }
     }
-   
+    
+     if(box1.innerHTML=="X" && box2.innerHTML=="X" && box3.innerHTML=="X"){
+        d2.innerHTML="PLAYER 1 WON";
+    }
+      if(box3.innerHTML=="X" && box5.innerHTML=="X" && box7.innerHTML=="X"){
+        d2.innerHTML="PLAYER 1 WON";
+    }
+      if(box3.innerHTML=="X" && box6.innerHTML=="X" && box9.innerHTML=="X"){
+        d2.innerHTML="PLAYER 1 WON";
+    }
+         if(box1.innerHTML=="O" && box2.innerHTML=="O" && box3.innerHTML=="O"){
+        d2.innerHTML="PLAYER 2 WON";
+    }
+      if(box3.innerHTML=="O" && box5.innerHTML=="O" && box7.innerHTML=="O"){
+        d2.innerHTML="PLAYER 2 WON";
+    }
+      if(box3.innerHTML=="O" && box6.innerHTML=="O" && box9.innerHTML=="O"){
+        d2.innerHTML="PLAYER 2 WON";
+    }
+    tie();
   
 }
 
@@ -115,7 +176,8 @@ function boxfour(){
             alert("INVALID!");
         }
     else{
-        
+        tieclk++;
+        console.log(tieclk);
   
     
         if(clk%2 == 0){
@@ -137,6 +199,20 @@ function boxfour(){
     }
     
     }
+     if(box4.innerHTML=="X" && box5.innerHTML=="X" && box6.innerHTML=="X"){
+        d2.innerHTML="PLAYER 1 WON";
+    }
+      if(box1.innerHTML=="X" && box4.innerHTML=="X" && box7.innerHTML=="X"){
+        d2.innerHTML="PLAYER 1 WON";
+    }
+       if(box4.innerHTML=="O" && box5.innerHTML=="O" && box6.innerHTML=="O"){
+        d2.innerHTML="PLAYER 2 WON";
+    }
+      if(box1.innerHTML=="O" && box4.innerHTML=="O" && box7.innerHTML=="O"){
+        d2.innerHTML="PLAYER 2 WON";
+    }
+    tie();
+    
     
 }
 
@@ -145,7 +221,8 @@ function boxfive(){
             alert("INVALID!");
         }
     else{
-        
+        tieclk++;
+        console.log(tieclk);
   
     
         if(clk%2 == 0){
@@ -168,14 +245,41 @@ function boxfive(){
       
     
     }
+       if(box1.innerHTML=="X" && box5.innerHTML=="X" && box9.innerHTML=="X"){
+        d2.innerHTML="PLAYER 1 WON";
+    }
+      if(box3.innerHTML=="X" && box5.innerHTML=="X" && box7.innerHTML=="X"){
+        d2.innerHTML="PLAYER 1 WON";
+    }
+       if(box2.innerHTML=="X" && box5.innerHTML=="X" && box8.innerHTML=="X"){
+        d2.innerHTML="PLAYER 1 WON";
+    }
+      if(box4.innerHTML=="X" && box5.innerHTML=="X" && box6.innerHTML=="X"){
+        d2.innerHTML="PLAYER 1 WON";
+    }
+    
+       if(box1.innerHTML=="O" && box5.innerHTML=="O" && box9.innerHTML=="O"){
+        d2.innerHTML="PLAYER 2 WON";
+    }
+      if(box3.innerHTML=="O" && box5.innerHTML=="O" && box7.innerHTML=="O"){
+        d2.innerHTML="PLAYER 2 WON";
+    }
+       if(box2.innerHTML=="O" && box5.innerHTML=="O" && box8.innerHTML=="O"){
+        d2.innerHTML="PLAYER 2 WON";
+    }
+      if(box4.innerHTML=="O" && box5.innerHTML=="O" && box6.innerHTML=="O"){
+        d2.innerHTML="PLAYER 2 WON";
+    }
+    tie();
 }
 
 function boxsix(){
-        if(alclk6>1){
+        if(alclk6>1 ){
             alert("INVALID!");
         }
     else{
-    
+    tieclk++;
+        console.log(tieclk);
         if(clk%2 == 0){
             d1.innerHTML="PLAYER = 1";
             clk++;
@@ -195,7 +299,20 @@ function boxsix(){
     }
         
     }
+      if(box3.innerHTML=="X" && box6.innerHTML=="X" && box9.innerHTML=="X"){
+        d2.innerHTML="PLAYER 1 WON";
+    }
+      if(box4.innerHTML=="X" && box5.innerHTML=="X" && box6.innerHTML=="X"){
+        d2.innerHTML="PLAYER 1 WON";
+    }
+      if(box4.innerHTML=="O" && box5.innerHTML=="O" && box6.innerHTML=="O"){
+        d2.innerHTML="PLAYER 2 WON";
+    }
+      if(box4.innerHTML=="O" && box5.innerHTML=="O" && box6.innerHTML=="O"){
+        d2.innerHTML="PLAYER 2 WON";
+    }
    
+    tie();
 }
 
 function boxseven(){
@@ -204,7 +321,8 @@ function boxseven(){
         }
     else{
         
-    
+    tieclk++;
+        console.log(tieclk);
     
         if(clk%2 == 0){
             d1.innerHTML="PLAYER = 1";
@@ -224,6 +342,27 @@ function boxseven(){
        box7.innerHTML="O";  
     }
     }
+      if(box4.innerHTML=="X" && box1.innerHTML=="X" && box7.innerHTML=="X"){
+        d2.innerHTML="PLAYER 1 WON";
+    }
+      if(box7.innerHTML=="X" && box5.innerHTML=="X" && box3.innerHTML=="X"){
+        d2.innerHTML="PLAYER 1 WON";
+    }
+      if(box7.innerHTML=="X" && box8.innerHTML=="X" && box9.innerHTML=="X"){
+        d2.innerHTML="PLAYER 1 WON";
+          
+    }
+          if(box4.innerHTML=="O" && box1.innerHTML=="O" && box7.innerHTML=="O"){
+        d2.innerHTML="PLAYER 2 WON";
+    }
+      if(box7.innerHTML=="O" && box5.innerHTML=="O" && box3.innerHTML=="O"){
+        d2.innerHTML="PLAYER 2 WON";
+    }
+      if(box7.innerHTML=="O" && box8.innerHTML=="O" && box9.innerHTML=="O"){
+        d2.innerHTML="PLAYER 2 WON";
+          
+    }
+    tie();
       
     
 }
@@ -232,6 +371,8 @@ function boxeight(){
             alert("INVALID!");
         }
     else{
+        tieclk++;
+        console.log(tieclk);
 
         if(clk%2 == 0){
             d1.innerHTML="PLAYER = 1";
@@ -252,13 +393,27 @@ function boxeight(){
         
     
     }
+          if(box2.innerHTML=="X" && box5.innerHTML=="X" && box8.innerHTML=="X"){
+        d2.innerHTML="PLAYER 1 WON";
+    }
+      if(box7.innerHTML=="X" && box8.innerHTML=="X" && box9.innerHTML=="X"){
+        d2.innerHTML="PLAYER 1 WON";
+    }
+          if(box2.innerHTML=="O" && box5.innerHTML=="O" && box8.innerHTML=="O"){
+        d2.innerHTML="PLAYER 2 WON";
+    }
+      if(box7.innerHTML=="O" && box8.innerHTML=="O" && box9.innerHTML=="O"){
+        d2.innerHTML="PLAYER 2 WON";
+    }
+    tie();
 }
 function boxnine(){
         if(alclk9>1){
             alert("INVALID!");
         }
     else{
-
+        tieclk++;
+        console.log(tieclk);
     
        if(clk%2 == 0){
             d1.innerHTML="PLAYER = 1";
@@ -279,5 +434,35 @@ function boxnine(){
        box9.innerHTML="O";  
     }
    
+    }
+              if(box9.innerHTML=="X" && box7.innerHTML=="X" && box8.innerHTML=="X"){
+        d2.innerHTML="PLAYER 1 WON";
+    }
+      if(box9.innerHTML=="X" && box5.innerHTML=="X" && box1.innerHTML=="X"){
+        d2.innerHTML="PLAYER 1 WON";
+    }
+              if(box9.innerHTML=="X" && box6.innerHTML=="X" && box3.innerHTML=="X"){
+        d2.innerHTML="PLAYER 1 WON";
+    }
+              if(box9.innerHTML=="O" && box7.innerHTML=="O" && box8.innerHTML=="O"){
+        d2.innerHTML="PLAYER 2 WON";
+    }
+      if(box9.innerHTML=="O" && box5.innerHTML=="O" && box1.innerHTML=="O"){
+        d2.innerHTML="PLAYER 2 WON";
+    }
+              if(box9.innerHTML=="O" && box6.innerHTML=="O" && box3.innerHTML=="O"){
+        d2.innerHTML="PLAYER 2 WON";
+    } 
+    tie();
+}
+
+
+
+
+
+function tie(){
+    if(d2.innerHTML=="" && tieclk==9){
+        d2.innerHTML="MATCH TIE";
+        console.log(d2);
     }
 }
