@@ -435,9 +435,11 @@ function boxeight(){
     }
           if(box2.innerHTML=="X" && box5.innerHTML=="X" && box8.innerHTML=="X"){
         d2.innerHTML="PLAYER 1 WON";
+              pwin1();
     }
       if(box7.innerHTML=="X" && box8.innerHTML=="X" && box9.innerHTML=="X"){
         d2.innerHTML="PLAYER 1 WON";
+          pwin1();
     }
           if(box2.innerHTML=="O" && box5.innerHTML=="O" && box8.innerHTML=="O"){
         d2.innerHTML="PLAYER 2 WON";
@@ -509,14 +511,14 @@ function boxnine(){
 
 
 function tie(){
-    if(d2.innerHTML=="" && tieclk==9){
+    if(tieclk==9){
+    if(document.getElementById("popup1").style.display=="none" && document.getElementById("popup2").style.display=="none"){
         d2.innerHTML="MATCH TIE";
-        console.log(d2);
-        document.getElementById("popup3").style.display="block";
+        console.log(d2); document.getElementById("popup3").style.display="block";
         d2.innerHTML="";
     }
 }
-
+}
 
 
 function refresh1(){
